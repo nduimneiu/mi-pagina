@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="JMR Asociados - Tu tienda tecnológica de confianza. Encuentra laptops, smartphones, accesorios y más con envío rápido y garantía completa.">
+<meta name="keywords" content="tecnología, laptops, smartphones, accesorios tecnológicos, tienda online">
+<title>JMR Asociados | Tienda Tecnológica Online - Laptops, Smartphones y Más</title>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8763788932694623"
+crossorigin="anonymous"></script>
+
+<style>
+:root{--brand:#0a66c2;--brand-dark:#084a8f;--text:#2c3e50;--bg-light:#f8f9fa}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+
+/* HEADER */
+header{background:linear-gradient(135deg,var(--brand),#3aa0ff);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);position:sticky;top:0;z-index:100}
+.top-bar{background:rgba(0,0,0,.1);padding:8px 0;font-size:13px;text-align:center}
+.nav-main{display:flex;align-items:center;gap:20px;padding:15px 0;flex-wrap:wrap}
+.logo{font-weight:800;font-size:24px;text-decoration:none;color:#fff}
+.nav-links{display:flex;gap:20px;flex:1;justify-content:center;flex-wrap:wrap}
+.nav-links a{color:#fff;text-decoration:none;padding:8px 16px;border-radius:8px;transition:.3s}
+.nav-links a:hover{background:rgba(255,255,255,.2)}
+.search{flex:1;max-width:400px;min-width:200px}
+.search input{padding:12px 16px;border-radius:10px;border:0;width:100%;font-size:14px}
+.cart-btn{background:rgba(255,255,255,.25);border:2px solid rgba(255,255,255,.5);color:#fff;padding:10px 20px;border-radius:10px;cursor:pointer;font-weight:600;transition:.3s}
+.cart-btn:hover{background:rgba(255,255,255,.35)}
+
+.container{max-width:1200px;margin:auto;padding:20px}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:60px 0;margin-bottom:40px}
+.hero-content{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.hero h1{font-size:48px;margin-bottom:20px;line-height:1.2}
+.hero p{font-size:20px;margin-bottom:25px;opacity:.95}
+.hero-btn{background:#fff;color:var(--brand);padding:15px 35px;border:0;border-radius:10px;font-size:18px;font-weight:700;cursor:pointer;transition:.3s}
+.hero-btn:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(0,0,0,.2)}
+.hero img{width:100%;border-radius:20px;box-shadow:0 25px 50px rgba(0,0,0,.3)}
+
+/* CARACTERÍSTICAS */
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;margin:50px 0}
+.feature-card{text-align:center;padding:30px;background:var(--bg-light);border-radius:15px;transition:.3s}
+.feature-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.feature-icon{font-size:48px;margin-bottom:15px}
+.feature-card h3{color:var(--brand);margin-bottom:10px}
+
+/* SECCIONES DE CONTENIDO */
+.content-section{margin:60px 0;padding:40px;background:var(--bg-light);border-radius:15px}
+.content-section h2{color:var(--brand);font-size:32px;margin-bottom:20px;border-bottom:3px solid var(--brand);padding-bottom:10px}
+.content-section p{margin-bottom:15px;font-size:16px}
+.content-section ul{margin-left:25px;margin-bottom:15px}
+.content-section li{margin-bottom:8px}
+
+/* PRODUCTOS */
+.products-section{margin:50px 0}
+.section-title{text-align:center;font-size:36px;color:var(--brand);margin-bottom:40px}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:25px}
+.card{border:1px solid #e0e0e0;border-radius:15px;background:#fff;overflow:hidden;transition:.3s;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.card:hover{transform:translateY(-8px);box-shadow:0 15px 35px rgba(0,0,0,.15)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card .info{padding:20px}
+.card h3{font-size:18px;margin-bottom:10px;color:var(--text)}
+.card .description{font-size:14px;color:#666;margin-bottom:15px}
+.price{font-weight:700;font-size:24px;color:var(--brand);margin:15px 0}
+.add{background:var(--brand);color:#fff;border:0;padding:12px;border-radius:10px;width:100%;font-size:16px;font-weight:600;cursor:pointer;transition:.3s}
+.add:hover{background:var(--brand-dark)}
+
+/* ADSENSE CONTAINERS */
+.ad-container{margin:40px 0;text-align:center;min-height:100px;background:#f5f5f5;border-radius:10px;padding:20px}
+
+/* FOOTER */
+footer{background:#2c3e50;color:#ecf0f1;padding:50px 0 20px;margin-top:80px}
+.footer-content{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:30px}
+.footer-section h3{color:#fff;margin-bottom:15px;font-size:20px}
+.footer-section p,.footer-section li{color:#bdc3c7;font-size:14px;margin-bottom:8px}
+.footer-section a{color:#3498db;text-decoration:none}
+.footer-section a:hover{color:#5dade2}
+.footer-bottom{text-align:center;padding-top:20px;border-top:1px solid #34495e;color:#95a5a6}
+
+/* MODAL */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center;padding:20px}
+.modal-content{background:#fff;padding:30px;border-radius:20px;width:90%;max-width:500px;max-height:90vh;overflow-y:auto}
+.modal h3{color:var(--brand);margin-bottom:20px;font-size:28px}
+.cart-item{display:flex;justify-content:space-between;padding:15px;border-bottom:1px solid #eee;align-items:center}
+.cart-empty{text-align:center;padding:40px;color:#999}
+.modal-footer{margin-top:20px;padding-top:20px;border-top:2px solid #eee}
+.modal-total{font-size:24px;font-weight:700;color:var(--brand);margin-bottom:20px}
+.btn-close{background:#95a5a6;color:#fff;padding:12px;border:0;border-radius:10px;width:100%;cursor:pointer;font-size:16px;margin-top:10px}
+.btn-close:hover{background:#7f8c8d}
+
+@media(max-width:768px){
+  .hero-content{grid-template-columns:1fr}
+  .hero h1{font-size:32px}
+  .nav-main{justify-content:center}
+  .nav-links{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-bar container">
+    ✓ Envío gratis en compras mayores a $100 | ✓ Garantía de 30 días | ✓ Atención al cliente 24/7
+  </div>
+  <div class="container nav-main">
+    <a href="#" class="logo">JMR Asociados</a>
+    <nav class="nav-links">
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#guias">Guías</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="search">
+      <input placeholder="Buscar productos tecnológicos...">
+    </div>
+    <button class="cart-btn" id="cartBtn">
+      🛒 Carrito (<span id="cartCount">0</span>)
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-content">
+    <div>
+      <h1>Tecnología que Impulsa tu Futuro</h1>
+      <p>Descubre los mejores productos tecnológicos con garantía completa, envío rápido y precios competitivos. Tu satisfacción es nuestra prioridad.</p>
+      <button class="hero-btn" onclick="document.getElementById('productos').scrollIntoView({behavior:'smooth'})">
+        Ver Productos
+      </button>
+    </div>
+    <img src="https://via.placeholder.com/800x400/667eea/ffffff?text=Tecnologia+JMR+Asociados" alt="Tecnología moderna en JMR Asociados">
+  </div>
+</section>
+
+<div class="container">
+
+<!-- CARACTERÍSTICAS -->
+<section class="features">
+  <div class="feature-card">
+    <div class="feature-icon">🚚</div>
+    <h3>Envío Rápido</h3>
+    <p>Recibe tus productos en 24-72 horas hábiles con seguimiento en tiempo real</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">🔒</div>
+    <h3>Pago Seguro</h3>
+    <p>Procesamos pagos con PayPal, la plataforma más segura del mercado</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">✓</div>
+    <h3>Garantía Total</h3>
+    <p>Todos nuestros productos incluyen garantía del fabricante</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">💬</div>
+    <h3>Soporte 24/7</h3>
+    <p>Nuestro equipo está disponible para ayudarte en todo momento</p>
+  </div>
+</section>
+
+<!-- ANUNCIO ADSENSE #1 -->
+<div class="ad-container">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-8763788932694623"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<!-- PRODUCTOS -->
+<section class="products-section" id="productos">
+  <h2 class="section-title">Productos Destacados</h2>
+  <div class="products" id="products"></div>
+</section>
+
+<!-- ANUNCIO ADSENSE #2 -->
+<div class="ad-container">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-8763788932694623"
+       data-ad-slot="9876543210"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
+</div>
+
+<!-- SOBRE NOSOTROS -->
+<section class="content-section" id="nosotros">
+  <h2>Sobre JMR Asociados</h2>
+  <p>Fundada en 2020, JMR Asociados nace con la misión de democratizar el acceso a la tecnología de calidad. Somos más que una tienda online; somos tu socio tecnológico de confianza.</p>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">Nuestra Filosofía</h3>
+  <p>Creemos que la tecnología debe ser accesible para todos. Por eso, seleccionamos cuidadosamente cada producto en nuestro catálogo, garantizando la mejor relación calidad-precio del mercado.</p>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">¿Por qué elegirnos?</h3>
+  <ul>
+    <li><strong>Experiencia:</strong> Más de 5 años ayudando a clientes a encontrar la tecnología perfecta</li>
+    <li><strong>Calidad:</strong> Solo trabajamos con marcas reconocidas y productos certificados</li>
+    <li><strong>Confianza:</strong> Miles de clientes satisfechos nos respaldan</li>
+    <li><strong>Transparencia:</strong> Precios claros sin cargos ocultos</li>
+  </ul>
+</section>
+
+<!-- GUÍAS Y CONSEJOS -->
+<section class="content-section" id="guias">
+  <h2>Guías de Compra y Consejos Tecnológicos</h2>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">Cómo Elegir la Laptop Perfecta</h3>
+  <p>Elegir una laptop puede ser abrumador con tantas opciones disponibles. Aquí te ayudamos a tomar la mejor decisión:</p>
+  <ul>
+    <li><strong>Uso diario y oficina:</strong> Procesador i5 o Ryzen 5, 8GB RAM, 256GB SSD</li>
+    <li><strong>Diseño y edición:</strong> Procesador i7 o Ryzen 7, 16GB RAM, 512GB SSD, tarjeta gráfica dedicada</li>
+    <li><strong>Gaming:</strong> Procesador i7/i9 o Ryzen 7/9, 16-32GB RAM, 1TB SSD, GPU de alta gama</li>
+    <li><strong>Estudiantes:</strong> Procesador i3/i5, 8GB RAM, buena duración de batería</li>
+  </ul>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">Smartphones: ¿Qué Características Importan?</h3>
+  <p>Al comprar un smartphone nuevo, considera estos aspectos fundamentales:</p>
+  <ul>
+    <li><strong>Cámara:</strong> Megapíxeles no lo son todo; busca estabilización óptica y apertura amplia</li>
+    <li><strong>Batería:</strong> Mínimo 4000mAh para uso intensivo, carga rápida es un plus</li>
+    <li><strong>Pantalla:</strong> AMOLED ofrece mejores colores, 90Hz+ para fluidez</li>
+    <li><strong>Procesador:</strong> Snapdragon o Apple A-series para mejor rendimiento</li>
+  </ul>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">Mantenimiento de Dispositivos Tecnológicos</h3>
+  <p>Prolonga la vida útil de tus dispositivos con estos consejos:</p>
+  <ul>
+    <li>Mantén el software actualizado para seguridad y rendimiento óptimo</li>
+    <li>Limpia regularmente puertos y pantallas con productos especializados</li>
+    <li>Evita temperaturas extremas que pueden dañar la batería</li>
+    <li>Usa protectores de pantalla y fundas para prevenir daños físicos</li>
+    <li>Realiza copias de seguridad periódicas de tu información importante</li>
+  </ul>
+</section>
+
+<!-- POLÍTICAS -->
+<section class="content-section">
+  <h2>Envíos, Devoluciones y Garantías</h2>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">Política de Envíos</h3>
+  <p>Procesamos todos los pedidos en un plazo de 24 a 72 horas hábiles. Los tiempos de entrega varían según tu ubicación:</p>
+  <ul>
+    <li>Zonas metropolitanas: 2-3 días hábiles</li>
+    <li>Resto del país: 4-7 días hábiles</li>
+    <li>Envío express disponible (entrega en 24h)</li>
+  </ul>
+  <p>Todos los envíos incluyen número de rastreo y seguro contra pérdida o daño.</p>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">Política de Devoluciones</h3>
+  <p>Tu satisfacción es importante para nosotros. Aceptamos devoluciones bajo las siguientes condiciones:</p>
+  <ul>
+    <li>30 días para devoluciones sin uso (producto en empaque original)</li>
+    <li>7 días para productos con defecto de fabricación</li>
+    <li>Reembolso completo o cambio por otro producto</li>
+    <li>Envío de devolución gratuito en caso de defectos</li>
+  </ul>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">Garantías</h3>
+  <p>Todos nuestros productos cuentan con:</p>
+  <ul>
+    <li>Garantía del fabricante (6-24 meses según producto)</li>
+    <li>Soporte técnico gratuito por parte de JMR Asociados</li>
+    <li>Asistencia en tramitación de garantías con fabricantes</li>
+  </ul>
+</section>
+
+<!-- TÉRMINOS Y PRIVACIDAD -->
+<section class="content-section">
+  <h2>Términos y Condiciones</h2>
+  <p>Al utilizar nuestro sitio web y realizar compras, aceptas los siguientes términos:</p>
+  <ul>
+    <li>Los precios pueden cambiar sin previo aviso, pero se respeta el precio al momento de la compra</li>
+    <li>Las imágenes son referenciales y pueden variar ligeramente del producto real</li>
+    <li>Nos reservamos el derecho de cancelar pedidos en caso de error en precios o disponibilidad</li>
+    <li>El uso del sitio debe ser para fines lícitos y respetando las leyes aplicables</li>
+  </ul>
+  
+  <h3 style="margin-top:25px;color:var(--brand)">Política de Privacidad</h3>
+  <p>En JMR Asociados respetamos tu privacidad:</p>
+  <ul>
+    <li>Recopilamos solo la información necesaria para procesar tu pedido</li>
+    <li>No compartimos tu información personal con terceros sin tu consentimiento</li>
+    <li>Los pagos se procesan de forma segura a través de PayPal</li>
+    <li>Usamos cookies para mejorar tu experiencia de navegación</li>
+    <li>Google AdSense puede mostrar anuncios personalizados basados en tu navegación</li>
+    <li>Puedes solicitar la eliminación de tus datos en cualquier momento</li>
+  </ul>
+</section>
+
+<!-- CONTACTO -->
+<section class="content-section" id="contacto">
+  <h2>Contacto y Atención al Cliente</h2>
+  <p>Estamos aquí para ayudarte. Puedes contactarnos a través de:</p>
+  <ul>
+    <li><strong>Email:</strong> soporte@jmrasociados.com</li>
+    <li><strong>Teléfono:</strong> +1 (555) 123-4567</li>
+    <li><strong>WhatsApp:</strong> +1 (555) 123-4567</li>
+    <li><strong>Horario:</strong> Lunes a Viernes 9:00 AM - 6:00 PM</li>
+  </ul>
+  <p>También puedes visitarnos en nuestras redes sociales para mantenerte actualizado sobre promociones y nuevos productos.</p>
+</section>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-content">
+    <div class="footer-section">
+      <h3>JMR Asociados</h3>
+      <p>Tu tienda tecnológica de confianza desde 2020</p>
+      <p style="margin-top:15px">Hacemos que la tecnología sea accesible para todos.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Enlaces Rápidos</h3>
+      <ul style="list-style:none">
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="#guias">Guías de Compra</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Información Legal</h3>
+      <ul style="list-style:none">
+        <li>Términos y Condiciones</li>
+        <li>Política de Privacidad</li>
+        <li>Política de Cookies</li>
+        <li>Envíos y Devoluciones</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Métodos de Pago</h3>
+      <p>Pagos 100% seguros con PayPal</p>
+      <p style="margin-top:15px">🔒 Conexión SSL segura</p>
+      <p>✓ Protección del comprador</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> JMR Asociados. Todos los derechos reservados. | Pagos seguros con PayPal</p>
+  </div>
+</footer>
+
+<!-- MODAL CARRITO -->
+<div id="cartModal" class="modal">
+  <div class="modal-content">
+    <h3>🛒 Tu Carrito de Compras</h3>
+    <div id="cartItems"></div>
+    <div class="modal-footer">
+      <div class="modal-total">Total: $<span id="cartTotal">0.00</span></div>
+      <div id="paypal-container-LPVYHJGP49RU2"></div>
+      <button class="btn-close" onclick="closeCart()">Cerrar</button>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://www.paypal.com/sdk/js?client-id=BAA6ZU-KCINuUCO08grbktC7CSNvcgnBwTKyKwNYqK3Z_xywYINjK1NNtrFh3PZurwVS-1P6l-srWBLltU&components=hosted-buttons&currency=USD"></script>
+
+<script>
+// PayPal
+paypal.HostedButtons({hostedButtonId:"LPVYHJGP49RU2"}).render("#paypal-container-LPVYHJGP49RU2");
+
+// Productos
+const productos=[
+  {id:1,titulo:"Laptop Profesional HP",precio:829.99,img:"https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=400",desc:"Intel i7, 16GB RAM, 512GB SSD"},
+  {id:2,titulo:"iPhone 14 Pro",precio:999.99,img:"https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"128GB, Cámara 48MP, 5G"},
+  {id:3,titulo:"Auriculares Sony WH-1000XM5",precio:349.99,img:"https://images.pexels.com/photos/3394650/pexels-photo-3394650.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"Cancelación de ruido, 30h batería"},
+  {id:4,titulo:"Apple Watch Series 9",precio:429.99,img:"https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"GPS, Monitor salud, Resistente agua"},
+  {id:5,titulo:"iPad Pro 12.9",precio:1099.99,img:"https://images.pexels.com/photos/1334597/pexels-photo-1334597.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"M2, 256GB, Liquid Retina XDR"},
+  {id:6,titulo:"Samsung Galaxy S24 Ultra",precio:1199.99,img:"https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"512GB, S Pen, Cámara 200MP"},
+  {id:7,titulo:"MacBook Pro 14",precio:1999.99,img:"https://images.pexels.com/photos/812264/pexels-photo-812264.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"M3 Pro, 18GB RAM, 512GB SSD"},
+  {id:8,titulo:"AirPods Pro 2",precio:249.99,img:"https://images.pexels.com/photos/3780681/pexels-photo-3780681.jpeg?auto=compress&cs=tinysrgb&w=400",desc:"USB-C, Cancelación adaptativa"}
+];
+
+const productsEl=document.getElementById("products");
+const cartCount=document.getElementById("cartCount");
+const cartItems=document.getElementById("cartItems");
+const cartTotal=document.getElementById("cartTotal");
+const modal=document.getElementById("cartModal");
+document.getElementById("year").textContent=new Date().getFullYear();
+
+let cart=[];
+
+function renderProducts(){
+  productsEl.innerHTML="";
+  productos.forEach(p=>{
+    productsEl.innerHTML+=`
+    <div class="card">
+      <img src="${p.img}" alt="${p.titulo}">
+      <div class="info">
+        <h3>${p.titulo}</h3>
+        <p class="description">${p.desc}</p>
+        <div class="price">$${p.precio.toFixed(2)}</div>
+        <button class="add" onclick="addToCart(${p.id})">Agregar al Carrito</button>
+      </div>
+    </div>`;
+  });
+}
+
+function addToCart(id){
+  const producto=productos.find(p=>p.id===id);
+  cart.push(producto);
+  cartCount.textContent=cart.length;
+  
+  // Feedback visual
+  const btn=event.target;
+  const originalText=btn.textContent;
+  btn.textContent="✓ Agregado";
+  btn.style.background="#27ae60";
+  setTimeout(()=>{
+    btn.textContent=originalText;
+    btn.style.background="";
+  },1500);
+}
+
+document.getElementById("cartBtn").onclick=()=>{
+  if(cart.length===0){
+    cartItems.innerHTML='<div class="cart-empty">Tu carrito está vacío<br>¡Explora nuestros productos!</div>';
+    cartTotal.textContent="0.00";
+  }else{
+    cartItems.innerHTML="";
+    let total=0;
+    cart.forEach((p,idx)=>{
+      total+=p.precio;
+      cartItems.innerHTML+=`
+      <div class="cart-item">
+        <div>
+          <strong>${p.titulo}</strong><br>
+          <small style="color:#666">${p.desc}</small>
+        </div>
+        <div style="text-align:right">
+          <div style="font-weight:700;color:var(--brand)">$${p.precio.toFixed(2)}</div>
+          <button onclick="removeFromCart(${idx})" style="background:none;border:none;color:#e74c3c;cursor:pointer;font-size:12px">Eliminar</button>
+        </div>
+      </div>`;
+    });
+    cartTotal.textContent=total.toFixed(2);
+  }
+  modal.style.display="flex";
+};
+
+function removeFromCart(idx){
+  cart.splice(idx,1);
+  cartCount.textContent=cart.length;
+  document.getElementById("cartBtn").onclick();
+}
+
+function closeCart(){
+  modal.style.display="none";
+}
+
+// Cerrar modal al hacer
